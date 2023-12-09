@@ -231,6 +231,7 @@ span.text {
   }
 }
 
+/* Media queries */
 @media only screen and (max-width: 600px) {
   body {
     background-attachment: scroll;
@@ -239,10 +240,8 @@ span.text {
   .wrapper {
     width: 90%;
     padding: 10px;
-  }
-
-  .heading h1 {
-    font-size: 4em;
+    margin: 0 auto; /* Menengahkan wrapper di layar ponsel */
+    border-width: 1px; /* Mengurangi lebar border pada layar ponsel */
   }
 
   .heading h3 {
@@ -257,12 +256,12 @@ span.text {
 
   .box {
     width: 100%;
-    height: auto;
-    padding: 5px; /* Adjust padding for smaller screens */
+    padding: 5px; /* Menyesuaikan padding untuk layar ponsel */
+    margin-bottom: 10px; /* Menambahkan ruang di antara box pada layar ponsel */
   }
 
   span.num {
-    font-size: 2.5em; /* Adjust font size for smaller screens */
+    font-size: 2.5em; /* Menyesuaikan ukuran font untuk layar ponsel */
   }
 
   span.text {
