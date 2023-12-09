@@ -1,0 +1,232 @@
+:root {
+  --color-white: #ffffff;
+  --color-black: #202020;
+  --color-glass: rgba(255, 255, 255, 0.2); /* Mengurangi kegelapan pada lapisan */
+  --color-shadow: 0 0 25px rgba(0, 0, 0, 0.5);
+  --color-border: #e8e8e8; /* Warna border tambahan */
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  color: var(--color-white);
+}
+
+body {
+  background: url(background-img.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center center;
+  background-size: cover;
+  background-color: #1a1a1a; /* Warna latar belakang yang lebih terang */
+}
+
+.wrapper {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  font-size: 16px;
+  border: 2px solid var(--color-border); /* Border untuk wrapper */
+  padding: 20px; /* Padding tambahan untuk wrapper */
+}
+
+.heading {
+  text-align: center;
+  margin-bottom: 4em;
+  border-bottom: 2px solid var(--color-border); /* Garis batas bawah untuk heading */
+  padding-bottom: 20px; /* Padding tambahan untuk heading */
+}
+
+.heading h1 {
+  text-shadow: var(--color-shadow);
+  font-size: 6.2em;
+  font-weight: 800;
+  letter-spacing: 0.15em;
+}
+
+.heading h3 {
+  font-size: 1.6em;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  font-weight: 600;
+  background-color: var(--color-glass);
+  backdrop-filter: blur(12px);
+  box-shadow: var(--color-shadow);
+  padding: 8px 30px;
+  display: inline-block;
+}
+
+.countdown {
+  width: 95vw;
+  display: flex;
+  justify-content: space-around;
+  gap: 10px;
+}
+
+.box {
+  width: 28vmin;
+  height: 29vmin;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  position: relative;
+  border: 2px solid var(--color-border); /* Border untuk box */
+  padding: 10px; /* Padding tambahan untuk box */
+}
+
+span.num {
+  background-color: var(--color-glass);
+  backdrop-filter: blur(12px);
+  height: 100%;
+  width: 100%;
+  display: grid;
+  place-items: center;
+  font-size: 4em;
+  box-shadow: var(--color-shadow);
+  border-radius: 0.1em;
+}
+
+span.num:after {
+  content: "";
+  position: absolute;
+  background-color: var(--color-glass);
+  height: 100%;
+  width: 50%;
+  left: 0;
+}
+
+span.text {
+  font-size: 1em;
+  background-color: var(--color-white);
+  color: var(--color-black);
+  display: block;
+  width: 80%;
+  position: relative;
+  text-align: center;
+  bottom: 20px;
+  padding: 0.7em 0;
+  font-weight: 600;
+  border-radius: 0.3em;
+  box-shadow: var(--color-shadow);
+  border: 2px solid var(--color-border); /* Border untuk text */
+  padding: 10px; /* Padding tambahan untuk text */
+}
+
+/* Keyframes */
+@keyframes vem_2017 {
+  0% {
+    right: 0%;
+  }
+  66.6666% {
+    right: 50%;
+    margin-right: -300px;
+  }
+  90% {
+    right: 50%;
+    margin-right: -300px;
+  }
+  100% {
+    right: 50%;
+  }
+}
+
+@keyframes vem_e_vai_balao {
+  0% {
+    right: 0%;
+  }
+  40% {
+    right: 50%;
+    margin-right: -300px;
+  }
+  50% {
+    right: 50%;
+    margin-right: -200px;
+    top: 50%;
+  }
+  100% {
+    top: -100%;
+    right: 50%;
+  }
+}
+
+@keyframes entrega_balao {
+  0% {
+    transform: rotate(-30deg);
+    width: 40px;
+  }
+  100% {
+    transform: rotate(-150deg);
+    width: 70px;
+  }
+}
+
+@keyframes vai_2016 {
+  0% {
+    top: 50%;
+  }
+  100% {
+    top: -100%;
+  }
+}
+
+@keyframes vem_feliz {
+  0% {
+    margin-top: 0px;
+    opacity: 0;
+  }
+  100% {
+    margin-top: -200px;
+    ;
+    opacity: 1;
+  }
+}
+
+@keyframes solta_fogos {
+  0% {
+    margin-top: 100%;
+    opacity: 0;
+    width: 2px;
+    height: 30px;
+    display: block;
+    border-radius: 50%;
+  }
+  75% {
+    margin-top: 0%;
+    opacity: 1;
+    width: 2px;
+    height: 30px;
+    display: block;
+    border-radius: 50%;
+  }
+  80% {
+    margin-top: 0px;
+    margin-left: 0px;
+    opacity: 1;
+    width: 10px;
+    height: 10px;
+    display: block;
+    border-radius: 50%;
+    transform: scale(0.2);
+  }
+  100% {
+    opacity: 1;
+    width: 10px;
+    height: 10px;
+    display: block;
+    border-radius: 50%;
+    transform: scale(1);
+  }
+}
+
+@keyframes estoura_fogos {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
