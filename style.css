@@ -180,10 +180,10 @@ span.text {
   }
   100% {
     margin-top: -200px;
-    ;
     opacity: 1;
   }
 }
+
 
 @keyframes solta_fogos {
   0% {
